@@ -5,10 +5,12 @@
     "body-parser": "latest",
     "express": "^4.17.1",
     "firebase-admin": "^8.3.0",
+    "firebase": "^6.6.1",
     "jquery": "^3.4.1",
     "node-static": "^0.7.11",
     "popper.js": "^1.15.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.9.1",
+    "cookie-parser": "^1.4.4"
   },
   "devDependencies": {
     "bootstrap": "^4.3.1"

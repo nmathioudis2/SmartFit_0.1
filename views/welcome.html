@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+<p>Welcome</p>
+<script>
+    window.onload = function() {
+        var firebase = require("firebase");
+        var user = firebase.auth().currentUser;
+        p = document.createElement("p");
+        p.innerHTML="your name is"+user;
+    }
+</script>
+<p></p>
+</body>
+</html>

@@ -3,27 +3,25 @@
 
 
     <link href="/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" type="text/css" href="/myCss/my.css" />
+    <link rel="stylesheet" type="text/css" href="/myCss/signIn.css" />
     <script src="/js/bootstrap.min.js"></script>
     <script src="Js/jquery.min.js"></script>
-    <!-- Continuing the <head> section -->
 
 </head>
 <body>
-<!-- ... -->
 </body>
-<!------ Include the above in your HEAD tag ---------->
+
 </head>
 <body id="LoginForm">
 <div class="container">
-    <h1 class="form-heading">Sign up</h1>
+    <h1 class="form-heading">Sign In</h1>
     <div class="login-form">
         <div class="main-div">
             <div class="panel">
-                <h2>Sign up Form</h2>
-                <p>Please enter  email and password</p>
+                <h2>SmartFit</h2>
+                <p>Enter  your email and password</p>
             </div>
-            <form method="POST" action="/register" id="signup">
+            <form method="POST" action="/fetchUser" id="signIn">
 
                 <div class="form-group">
 
@@ -42,29 +40,22 @@
 
                 </div>
 
-                <div class="form-group">
-
-                    <!-- <input type="password" class="form-control" id="inputPassword" placeholder="Password"> -->
-                    <input type="password" class="form-control" name="passwordVer" id="passwordVer" placeholder="Confirm Password" >
-<!--                    onkeyup="checkPass(); return false;"-->
-
-
-                </div>
-
                 <div class="forgot">
                     <!-- <a href="reset.html">Forgot password?</a> -->
                 </div>
-
-                <button type="submit"  class="btn btn-primary">Sign Up</button>
-
-
+                <button type="submit"  class="btn btn-primary">Login</button>
 
             </form>
 
-            <form  action="/signIn">
-                <button id="changeToLoginPage" type="submit"  class="btn btn-primary">Already have an account</button>
-
+            <form  action="/gmailLogin">
+                <button type="submit"  class="btn btn-primary">Sign in with  Gmail</button>
             </form>
+
+            <form  action="/signUp">
+                <button type="submit"  class="btn btn-primary">Create  an acoount</button>
+            </form>
+
+
         </div>
         <p class="botto-text"> Designed by V Van Gogh</p>
     </div></div></div>
